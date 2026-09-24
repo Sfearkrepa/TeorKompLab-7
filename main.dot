@@ -1,0 +1,5 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x611bdf89b560 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870" fontname="Courier",label="{0:\l|  %1 = alloca i32, align 4\l  %2 = alloca %struct.Point, align 4\l  %3 = alloca i32, align 4\l  store i32 0, ptr %1, align 4\l  call void @llvm.memcpy.p0.p0.i64(ptr align 4 %2, ptr align 4\l... @__const.main.p, i64 8, i1 false)\l  %4 = load i64, ptr %2, align 4\l  %5 = call i32 @sum(i64 %4)\l  store i32 %5, ptr %3, align 4\l  %6 = load i32, ptr %3, align 4\l  %7 = call i32 (ptr, ...) @printf(ptr noundef @.str, i32 noundef %6)\l  ret i32 0\l}"];
+}
