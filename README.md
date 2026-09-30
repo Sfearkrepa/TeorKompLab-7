@@ -23,7 +23,7 @@ sudo apt install -y clang llvm graphviz
 
 Версии инструментов.
 
-![Версии инструментов](screenshots/Primer1.png)
+![Версии инструментов](Primer1.png)
 
 ### Получение AST
 
@@ -33,11 +33,11 @@ clang -Xclang -ast-dump -fsyntax-only struct_point.c > ast.txt
 
 Исходный файл.
 
-![Исходный файл](screenshots/Primer2.png)
+![Исходный файл](Primer2.png)
 
 AST.
 
-![AST](screenshots/Primer3.png)
+![AST](Primer3.png)
 
 ### Генерация LLVM IR
 
@@ -48,11 +48,11 @@ clang -S -emit-llvm -O2 struct_point.c -o ir_O2.ll
 
 IR без оптимизаций (`-O0`).
 
-![IR -O0](screenshots/Primer4.png)
+![IR -O0](Primer4.png)
 
 IR с оптимизациями (`-O2`).
 
-![IR -O2](screenshots/Primer5.png)
+![IR -O2](Primer5.png)
 
 ### Оптимизация IR
 
@@ -63,7 +63,7 @@ diff ir_O0.ll ir_O2.ll
 
 сравнение IR.
 
-![diff](screenshots/Primer6.png)
+![diff](Primer6.png)
 
 ### Построение CFG
 
@@ -77,7 +77,7 @@ dot -Tpng main.dot -o main.cfg.png
 
 список файлов после генерации CFG.
 
-![Файлы CFG](screenshots/Primer7.png)
+![Файлы CFG](Primer7.png)
 
 CFG для функции `sum`.
 
@@ -131,7 +131,7 @@ __attribute__((always_inline)) int sum(struct Point p) {
 
 IR с `always_inline`.
 
-![always_inline](screenshots/Primer10.png)
+![always_inline](Primer10.png)
 
 ### Выводы по индивидуальному заданию
 
